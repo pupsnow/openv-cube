@@ -26,10 +26,13 @@ public class BeanFactoryDemo {
 	public static void main(String[] args) {
 		//从classpath路径上装载XML配置信息
 		Resource resource = new ClassPathResource("beanfactory.xml");
+		
 		//实例化IoC容器，此时，容器并未实例化beanfactory.xml所定义的各个受管Bean
 		BeanFactory factory = new XmlBeanFactory(resource);
+		
 		//获得受管Bean
-		IBankSecurityService bankSecurityService = (IBankSecurityService) factory.getBean("bankSecurityService");
+		IBankSecurityService bankSecurityService = 
+			(IBankSecurityService) factory.getBean("bankSecurityService");
 		
 		bankSecurityService.bankToSecurity(2000.00);
 		bankSecurityService.securityToBank(2000.00);
