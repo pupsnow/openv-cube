@@ -6,5 +6,8 @@
 	<classpathentry kind="lib" path="D:/springsource/ebooks/lib/com.springsource.org.apache.log4j-1.2.15.jar"/>
 	<classpathentry kind="lib" path="D:/springsource/ebooks/lib/org.springframework.core-3.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="D:/springsource/ebooks/lib/org.springframework.beans-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/springsource/ebooks/lib/org.springframework.context-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/springsource/ebooks/lib/org.springframework.asm-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/springsource/ebooks/lib/org.springframework.expression-3.0.0.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
