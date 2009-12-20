@@ -1,5 +1,9 @@
 package com.openv.spring3x.ioc;
 
+import java.util.Properties;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 
 /**
  * <pre>
@@ -14,10 +18,29 @@ package com.openv.spring3x.ioc;
  */
 public class BankSecurityServiceImpl implements IBankSecurityService {
 
+	@Autowired
 	private IBankSecurityDao bankSecurityDao;
+	
+	private Properties properties;	
+	
+	public BankSecurityServiceImpl() {
+	}
+
+	public BankSecurityServiceImpl(IBankSecurityDao bankSecurityDao) {
+		this.bankSecurityDao = bankSecurityDao;
+	}
+
+	public BankSecurityServiceImpl(IBankSecurityDao bankSecurityDao, Properties properties) {
+		this.bankSecurityDao = bankSecurityDao;
+		this.properties = properties;
+	}
 	
 	public void setBankSecurityDao(IBankSecurityDao bankSecurityDao) {
 		this.bankSecurityDao = bankSecurityDao;
+	}
+
+	public void setProperties(Properties properties) {
+		this.properties = properties;
 	}
 	
 	public void bankToSecurity(Double money){
@@ -29,3 +52,4 @@ public class BankSecurityServiceImpl implements IBankSecurityService {
 	}
 
 }
+
