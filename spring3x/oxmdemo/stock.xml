@@ -1,0 +1,6 @@
+<?xml version="1.0" ?><xb:StockInfo xmlns:xb="http://www.open-v.com/spring3x/xmlbeans">
+  <xb:name xmlns:xb="http://www.open-v.com/spring3x/xmlbeans">OWCY</xb:name>
+  <xb:code xmlns:xb="http://www.open-v.com/spring3x/xmlbeans">168000</xb:code>
+  <xb:desc xmlns:xb="http://www.open-v.com/spring3x/xmlbeans">OWCY Inc.</xb:desc>
+  <xb:price xmlns:xb="http://www.open-v.com/spring3x/xmlbeans">100.0</xb:price>
+</xb:StockInfo>
