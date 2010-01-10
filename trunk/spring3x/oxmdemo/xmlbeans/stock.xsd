@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="qualified"
+	targetNamespace="http://www.open-v.com/spring3x/xmlbeans" 
+	xmlns:tns="http://www.open-v.com/spring3x/xmlbeans">
+
+	<element name="StockInfo">
+		<complexType>
+			<sequence>
+				<element name="name" type="string" minOccurs="1"/>
+				<element name="code" type="int" minOccurs="1"/>
+				<element name="desc" type="string" />
+				<element name="price" type="double" minOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>

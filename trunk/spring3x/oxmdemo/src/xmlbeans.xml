@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:oxm="http://www.springframework.org/schema/oxm"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       					http://www.springframework.org/schema/oxm 
+       						http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd">
+					
+	<bean id="xmlBeansMarshaller" 
+		class="org.springframework.oxm.xmlbeans.XmlBeansMarshaller">
+		<property name="xmlOptions" ref="xmlOptionsFactoryBean"/>
+	</bean>
+	
+	<bean id="xmlOptionsFactoryBean" 
+		class="org.springframework.oxm.xmlbeans.XmlOptionsFactoryBean">
+        <property name="options">
+            <props>
+                <prop key="SAVE_PRETTY_PRINT">true</prop>
+                <prop key="CHARACTER_ENCODING">UTF-8</prop>
+            </props>
+        </property>
+	</bean>
+
+	<!--  
+	<oxm:xmlbeans-marshaller id="xmlBeansMarshaller" 
+		options="xmlOptionsFactoryBean"/>
+		-->	
+
+</beans>

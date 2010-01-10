@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<project name="xmlbeanstools" basedir=".">
+
+	<path id="all-libs">
+		<fileset dir="../../lib" includes="*.jar"/>
+	</path>
+    
+	<target name="stock">
+	    <taskdef name="xmlbean" 
+	    		classname="org.apache.xmlbeans.impl.tool.XMLBean" 
+	    		classpathref="all-libs"/>
+        <xmlbean schema="xmlbeans" srcgendir="gensrc/xmlbeanstools/" 
+        		destfile="lib/stock.jar" classpathref="all-libs"/>
+    </target>
+
+</project>
