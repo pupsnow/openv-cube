@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="e2e-bank-web">
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="e2e-bank-network.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/e2e-bank-network/e2e-bank-network">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="e2e-bank-web"/>
+        <property name="java-output-path"/>
+    </wb-module>
+</project-modules>
