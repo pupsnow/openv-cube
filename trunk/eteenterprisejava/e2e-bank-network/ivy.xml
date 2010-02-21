@@ -1,0 +1,16 @@
+<ivy-module version="1.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"            
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info organisation="openv" module="e2e-bank-network"/>
+
+	<configurations>
+		<include file="../e2e-bank/default-ivy-configurations.xml"/>
+	</configurations>
+    
+	<dependencies>	
+		<dependency org="apache" name="commons-logging" rev="1.1.1" transitive="false"/>
+		<dependency org="apache" name="log4j" rev="1.2.15" transitive="false"/>
+		<dependency org="quartz" name="quartz" rev="1.6.5" transitive="false"/>
+	</dependencies>
+        
+</ivy-module>
