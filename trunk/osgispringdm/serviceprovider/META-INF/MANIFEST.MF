@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Serviceprovider
+Bundle-SymbolicName: serviceprovider
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.openv.osgi.serviceprovider.Activator
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.openv.osgi.serviceprovider.interfaces;version="1.0.0"
