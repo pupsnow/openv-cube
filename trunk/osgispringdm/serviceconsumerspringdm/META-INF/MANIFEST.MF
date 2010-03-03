@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Serviceconsumerspringdm
+Bundle-SymbolicName: serviceconsumerspringdm
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: com.openv.osgi.serviceproviderspringdm.interfaces;version="1.0.0",
+ org.springframework.beans.factory;version="3.0.1.RELEASE-A"
