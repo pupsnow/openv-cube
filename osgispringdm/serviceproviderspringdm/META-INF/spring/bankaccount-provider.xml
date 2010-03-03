@@ -8,7 +8,7 @@
     <bean id="queryBankAccount" class="com.openv.osgi.serviceproviderspringdm.QueryBankAccountImpl"/>
 
     <osgi:service id="queryBankAccountOsgi" ref="queryBankAccount"
-        interface="com.openv.osgi.serviceproviderspringdm.interfaces.IQueryBankAccount" >
+        interface="com.openv.osgi.serviceproviderspringdm.interfaces.IQueryBankAccount">
         <osgi:service-properties>
             <entry key="BANK" value="CMB"/>
         </osgi:service-properties>   
