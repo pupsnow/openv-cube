@@ -23,7 +23,7 @@ public class ConfigurableDemo{
 	public static void main(String[] args) {
 		
 		//启用Spring DI，并完成AspectJ 6切面的配置工作，比如将IoC容器暴露给切面
-		new ClassPathXmlApplicationContext("ltw.xml");
+		new ClassPathXmlApplicationContext("config.xml");
 				
 		log.info("即将构建领域对象");
 		
