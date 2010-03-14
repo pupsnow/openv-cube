@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="/openv-cube-lib/org.springframework.context-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="lib" path="/openv-cube-lib/org.springframework.core-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="lib" path="/openv-cube-lib/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="/openv-cube-lib/com.springsource.javax.inject-1.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
